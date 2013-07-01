@@ -6,6 +6,10 @@
   vertical-align: middle;
   zoom: 1;
   *display: inline;
+
+  /*bootstrap adapted*/
+  margin-left:0px !important; 
+  /*bootstrap adapted end*/
 }
 .chzn-container .chzn-drop {
   background: #fff;
@@ -115,6 +119,12 @@
   z-index: 1010;
 }
 .chzn-container-single .chzn-search input {
+  /*bootstrap adapted*/
+  height:auto; 
+  border-radius:0px;
+  line-height:normal; 
+  /*bootstrap adapted end*/
+
   background: #fff url('chosen-sprite.png') no-repeat 100% -20px;
   background: url('chosen-sprite.png') no-repeat 100% -20px, -webkit-gradient(linear, 0 0, 0 100%, color-stop(1%, #eeeeee), color-stop(15%, #ffffff));
   background: url('chosen-sprite.png') no-repeat 100% -20px, -webkit-linear-gradient(top, #eeeeee 1%, #ffffff 15%);
