@@ -164,7 +164,8 @@
         }
       } else {
         if (!this.active_field) {
-          return this.activate_field();
+            if (this.options && this.options.focus) this.options.focus(); 
+            return this.activate_field();
         }
       }
     };
@@ -535,7 +536,11 @@
 
     Chosen.prototype.blur_test = function(evt) {
       if (!this.active_field && this.container.hasClass("chzn-container-active")) {
-        return this.close_field();
+          //onblur
+          //this.form_field_jq.trigger("blur");
+          if (this.options && this.options.blur) this.options.blur();
+
+          return this.close_field();
       }
     };
 
